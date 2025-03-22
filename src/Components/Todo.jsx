@@ -13,7 +13,7 @@ const Todo = () => {
     setInputValue("");
   }
 
-  console.log(task);
+  // console.log(task);
   
 
   return (
@@ -26,9 +26,9 @@ const Todo = () => {
       />
       <button onClick={todo}>ADD</button>
       <ul>
-        {task?.map((item, index) => {
+        {task?.map((item) => {
           <div>
-            <li key={index}>{item.text}</li>
+            <li key={item.id}>{item.text}</li>
           </div>;
         })}
       </ul>
